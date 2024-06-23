@@ -1,9 +1,8 @@
 :root {
     --background-Color: #060220;
-    --primary-Color: #565569;
+    --primary-Color: #cfcde7;
     --secondary-Color: #ebbcba;
-    --accent-Color: #31748f;
-    --text-Color: #e0def4;
+    --text-Color: #6e6d75;
     --border-Color: #26233a;
     --screen-Color: #1b0e1f;
     --tertiary-Color: #f5deb3;
@@ -40,6 +39,14 @@ button {
     height: 6rem;
 }
 
+label {
+    text-align: right;
+    color: var(--text-Color);
+}
+
+input {
+    margin-top: 5px;
+}
 .container {
     display: flex;
     flex-direction: column;
