@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" as="styles">
+    <title>Calculator</title>
+</head>
+<body>
+    <main class="container">
+        <section class="screen">
+            <input type="number" class="screen-display" id="screenLeft">
+            <input type="number" class="screen-display" id="screenRight">
+        </section>
+        <section class="buttons">
+            <div class="container-btn">
+                <button onclick="product()" class="button-primary">*</button>
+                <button onclick="quotient()" class="button-primary">/</button>
+                <button onclick="subtraction()" class="button-primary">-</button>
+                <button onclick="sum()" class="button-primary">+</button>
+            </div>
+            <div class="container-btn">
+                <button class="button-secondary" onclick="pow()">^</button>
+                <button class="button-secondary" onclick="root()">√</button>
+            </div>
+            <div class="container-btn">
+                <button class="button-secondary" onclick="abs()">|x|</button>
+                <button class="button-secondary" onclick="random()">random</button>
+            </div>
+            <div class="container-btn">
+                <button class="button-tertiary" onclick="rounded()">Rounded</button>
+                <button class="button-tertiary" onclick="floor()">Floor</button>
+                <button class="button-tertiary" onclick="ceil()">Ceil</button>
+            </div>
+        </section>
+        <section class="screen-result">
+            <h2 class="result" id="result"></h2>
+        </section>
+        <button onclick="deleteFields()" class="button-delete">Delete</button>
+        
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

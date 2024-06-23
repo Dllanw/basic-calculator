@@ -1,0 +1,138 @@
+:root {
+    --background-Color: #191724;
+    --primary-Color: #e0def4;
+    --secondary-Color: #ebbcba;
+    --accent-Color: #31748f;
+    --text-Color: #e0def4;
+    --border-Color: #26233a;
+    --screen-Color: #1b0e1f;
+    --tertiary-Color: #f5deb3;
+}
+
+html {
+    box-sizing: border-box; 
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #191724;
+    margin: 0rem;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button,
+input:focus { 
+    -webkit-appearance: none; 
+    margin: 0; 
+    outline: none;
+    text-align: center;
+}
+
+button {
+    border-radius: 0.5rem;
+    border: none;
+    border-color: var(--border-Color);
+    font-weight: bold;
+    font-size: 2rem;
+    height: 6rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #252530;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.screen {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.screen-display {
+    width: 100%;
+    height: 6rem;
+    background-color: var(--screen-Color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.8rem;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+    color: var(--primary-Color);
+}
+
+.container-btn {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.button-primary{
+    background-color: var(--secondary-Color);
+    width: 100%;
+}
+
+.button-primary:hover {
+    background-color: #ea9c99;
+    cursor: pointer;
+}
+
+.button-secondary {
+    width: 15.5rem;
+    background-color: var(--primary-Color);
+}
+
+.button-secondary:hover {
+    background-color: #bbb6f4;
+    cursor: pointer;
+}
+
+.button-tertiary {
+    width: 100%;
+    background-color: var(--tertiary-Color);
+}
+
+.button-tertiary:hover {
+    cursor: pointer;
+    background-color: #f7cd80;
+}
+
+.button-delete {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #ff91a0;
+}
+
+.button-delete:hover {
+    background-color: #ff596f;
+    cursor: pointer;
+}
+
+.screen-result {
+    display: grid;
+    place-items: center;
+    background-color: var(--screen-Color);
+    width: 100%;
+    height: 6rem;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+}
+
+.result {
+    margin: 0;
+    font-size: 2.5rem;
+    padding: 10px;
+    color: var(--text-Color);
+}
+
