@@ -1,6 +1,6 @@
 :root {
-    --background-Color: #191724;
-    --primary-Color: #e0def4;
+    --background-Color: #060220;
+    --primary-Color: #565569;
     --secondary-Color: #ebbcba;
     --accent-Color: #31748f;
     --text-Color: #e0def4;
@@ -18,7 +18,7 @@ body {
     display: grid;
     place-items: center;
     height: 100vh;
-    background-color: #191724;
+    background-color: var(--background-Color);
     margin: 0rem;
 }
 
